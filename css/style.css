@@ -1,16 +1,16 @@
 /*TOTAL WIDTH*/
 nav {
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 section,footer {
-    margin-left: 290px;
-    margin-right: 290px;
+    margin-left: 220px;
+    margin-right: 220px;
 }
 .footerimage {
-display: flex;
-width:100%
+    display: flex;
+    width:100%
 }
 /*NAVIGATION*/
 .flex-container {
@@ -25,7 +25,7 @@ width:100%
 .nav-item {
     display: inline-flex;
     text-align: left;
-    margin-right: 80px;
+    margin-right: 60px;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-size: 150%;
@@ -66,15 +66,17 @@ hr {
     height: 339px;
 }*/
 
-/*HOW SECTION*/
-#flex-container3 {
-    display: flex;
-    align-items: start;
+/*GRID SECTION*/
+#grid-container3 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-content: end;
+    /*align-items: start;*/
     border-bottom: 2px solid #B9B6B6;
 }
 
 .smallgraybox {
-    display: flex;
+    display: grid;
     background-color: #C4C4C4;
     border-radius: 20px;
     justify-content: center;
@@ -82,11 +84,11 @@ hr {
     margin-right: 30px;
     margin-left: 30px;
     margin-bottom: 30px;
-    min-height: 200px;
+    min-height: 250px;
 }
 
 .smallgrayboxtext{
-    display: flex;
+    display: grid;
     text-align: left;
     flex-direction: column;
     justify-content: center;
@@ -113,12 +115,13 @@ hr {
     padding: 30px;
     border-radius: 20px;
     width: 50%;
+    justify-content: center;
 }
 
 #follow-01 {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: auto;
 }
 
 /*TEXT*/
@@ -163,3 +166,88 @@ p {
     font-family: "Roboto", sans-serif; 
     line-height: 1.8;
 }
+@media only screen and (max-width: 600px) {
+    /*body {
+        background-color: blue;
+    }*/
+    nav {
+        display: flex;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    section, footer {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    #logo {
+        display: flex;
+        width: 60%;
+        height: auto;
+        margin-left: 0px;
+        min-width: 125px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        font-family: "Roboto", sans-serif; 
+        font-size: 60%;
+
+    }
+    .nav-item {
+        display: flex;
+        margin-left: 1px;
+    }
+    #flex-container2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;}
+
+    #grid-container3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 33% 33% 33%;
+    }
+
+    .designboxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .gray-outlinedbox{
+        align-items: center;
+    }
+
+    .designbackground{
+        height: 500px;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    #linked-in{
+        display: flex;
+        width: 50px;
+        height: auto;
+    }
+    h1{
+        margin-left: 30px;
+    }
+    #erica{
+        display: flex;
+        margin: 0px;
+        width: 100%;
+        height: auto;
+    }
+    #graybox{
+        display: flex;
+        align-content: center;
+        padding: 0px;
+    }
+    #top-section{
+        margin-left: 20px;
+    }
+   }
