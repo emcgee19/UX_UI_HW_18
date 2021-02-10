@@ -1,3 +1,8 @@
+@font-face {
+    font-family: shorelines script; 
+    src: url(https://www.dafont.com/shorelines-script.font)
+}
+
 /*TOTAL WIDTH*/
 nav {
     margin-left: auto;
