@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'shorelines script bold'; 
-    src: url(https://www.dafont.com/shorelines-script.font);
-}
+    font-family: 'Shorelines Script Bold';
+    src: url('../fonts/Shorelines\ Script\ Bold.otf') format('otf');
+    }
 
 /*TOTAL WIDTH*/
 nav {
